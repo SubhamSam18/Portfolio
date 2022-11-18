@@ -1,0 +1,57 @@
+.nav-bar{
+    background: black;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+
+    .logo{
+        display: block;
+        padding: 8px 0;
+
+        img{
+            display: block;
+            margin: 8px auto;
+            width: 24px;
+        }
+        &.sub-logo{
+            width: 50px;
+        }
+    }
+}
+
+nav{
+    display: block;
+    text-align: center;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+    a{
+        font-size: 32px;
+        color: grey;
+        display: block;
+        line-height: 50px;
+        height: 51px;
+        position: relative;
+        text-decoration: none;
+    }
+    i{
+        transition: all 0.3s ease-in-out;
+    }
+    :hover{
+        color: white;
+        svg{
+            opacity: 1;
+        }
+        :after{
+            opacity: 1;
+        }
+        font-size: 42px;
+    }
+    :after{
+
+    }
+}
