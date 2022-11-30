@@ -1,17 +1,16 @@
 import React from 'react'
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import LogoS from '../../assets/images/portfolio-removebg-preview.png'
 import { Link, NavLink } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faEnvelope , faHome , faUser} from '@fortawesome/free-solid-svg-icons'
-
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 const Sidebar = () => {
   return (
     <div className='nav-bar'>
       <Link className='logo' to='/'>
         <img src={LogoS} alt="logo"></img>
-        <img className='sub-logo' src={LogoSubtitle} alt="slobodan"></img>
+        {/* <img className='sub-logo' src={LogoSubtitle} alt="HI"></img> */}
       </Link>
       <nav>
         <NavLink exact = "true" activeClassname="active" to="/">
@@ -24,6 +23,19 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
         </NavLink>
       </nav>
+
+      <ul>
+        <li>
+            <a href='https://www.linkedin.com/in/subhamsamanta'>
+                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
+            </a>
+        </li>
+        <li>
+            <a href='https://github.com/SubhamSam18'>
+                <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
+            </a>
+        </li>
+      </ul>
     </div>
   )
 }
