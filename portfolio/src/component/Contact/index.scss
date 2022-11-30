@@ -1,0 +1,100 @@
+.contact-container {
+    margin-left: 10%;
+    margin-top: 10%;
+    height: 1000px;
+    animation: fadeIn 1s 1.7s backwards;
+    h1{
+        &:before{
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: rgb(32, 120, 202);
+            font-size: 18px;
+            // position: absolute;            margin-top: -40px;
+            left: 15px;
+            opacity: 0.6;
+        }
+        &:after{
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: rgb(32, 120, 202);
+            font-size: 18px;
+            // position: absolute;            margin-top: -40px;
+            left: 15px;
+            opacity: 0.6;
+        }
+    }
+    .contact-heading h1 {
+        color: yellow;
+        font-size: 30px;
+    }
+
+    .contact-body {
+        // background: transparent;
+        .input-span{
+            width: 9%;
+        }
+        input{
+            color: white;
+            width: 20%;
+            height: 25px;
+            margin: 10px;
+            border-radius: 0.5rem;
+            background: transparent;
+            // border: transparent;
+            border-color: yellow;
+        }
+        input,textarea:focus{
+            border-color: yellow;
+            color: white;
+            outline: none;
+            outline-color: yellow;
+        }
+        textarea{
+            color: white;
+            // border: transparent;
+            border-color: yellow;
+            border-radius: 0.5rem;
+            width: 20%;
+            margin: 10px;
+            background: transparent;
+        }
+        // button{
+        //     // margin-left: 7%;
+        //     color: yellow;
+        //     background-color: transparent;
+        //     border-color: yellow;
+        //     text-align: center;
+        //     font-family: Helvetica,sans-serif;
+        //     // border-radius: 5px;
+        //     width: 20.5%;
+        //     margin: 10px;
+        //     height: 30px;
+        //     // text-decoration: none;
+        // }
+        // button:hover{
+        //     transition: .4s ease-in-out;
+        //     color: black;
+        //     font-weight: 100;
+        //     background-color: yellow;
+        //     border-color: transparent;
+        //     text-align: center;
+        //     border-color: white;
+        // }
+        a{
+            color: yellow;
+            background-color: transparent;
+            border-color: yellow;
+            text-align: center;
+            font-family: Helvetica,sans-serif;
+            // border-radius: 5px;
+            text-decoration: none;
+            width: 20.5%;
+            margin: 10%;
+            height: 30px;
+        }
+    }
+}
+::placeholder {
+    color: rgb(235, 235, 148);
+    font-weight:100;
+}
