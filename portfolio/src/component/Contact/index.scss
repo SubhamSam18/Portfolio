@@ -2,7 +2,7 @@
     margin-left: 10%;
     margin-top: 10%;
     height: 1000px;
-    animation: fadeIn 1s 1.7s backwards;
+    animation: fadeIn 1s 0.2s backwards;
     h1{
         &:before{
             content: '<h1>';
@@ -30,6 +30,7 @@
 
     .contact-body {
         // background: transparent;
+        animation: fadeIn 1s 0.2s backwards;
         .input-span{
             width: 9%;
         }
@@ -81,16 +82,21 @@
         //     border-color: white;
         // }
         a{
+            text-align: center;
             color: yellow;
             background-color: transparent;
             border-color: yellow;
+            letter-spacing: 2px;
+            font-size: 12px;
             text-align: center;
-            font-family: Helvetica,sans-serif;
+            font-family: sans-serif;
             // border-radius: 5px;
             text-decoration: none;
-            width: 20.5%;
-            margin: 10%;
+            margin: 9%;
             height: 30px;
+            // border-style:outset;
+            // border-width: 1px;
+            border-color: aliceblue;
         }
     }
 }

@@ -1,0 +1,77 @@
+.skills-container {
+    margin-left: 10%;
+    margin-top: 8%;
+
+    .skills-heading{
+        top: 20px;
+        text-align: justify;
+        float: right;
+        width: 30%;
+        animation: fadeIn 1s 0.2s backwards;
+        color: yellow;
+        h1 {
+            &:before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                color: rgb(32, 120, 202);
+                font-size: 18px;
+                left: 15px;
+                opacity: 0.6;
+            }
+
+            &:after {
+                content: '</h1>';
+                font-family: 'La Belle Aurore';
+                color: rgb(32, 120, 202);
+                font-size: 18px;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .skills-body{
+        
+        color: aqua;
+    }
+
+    .project-container{
+
+        width: 60%;
+        height: 600px;
+        .project-heading{
+            top: 20px;
+            // text-align: justify;
+            // float: right;
+            // width: 30%;
+            // right: 30%;
+            animation: fadeIn 1s 0.2s backwards;
+            color: yellow;
+            h1 {
+                &:before {
+                    content: '<h1>';
+                    font-family: 'La Belle Aurore';
+                    color: rgb(32, 120, 202);
+                    font-size: 18px;
+                    left: 15px;
+                    opacity: 0.6;
+                }
+    
+                &:after {
+                    content: '</h1>';
+                    font-family: 'La Belle Aurore';
+                    color: rgb(32, 120, 202);
+                    font-size: 18px;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .card{
+            border-color: antiquewhite;
+            border: 1px solid;
+            height: 200px;
+            width: 25%;
+        }
+    }
+    
+}

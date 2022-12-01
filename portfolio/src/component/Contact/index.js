@@ -4,7 +4,7 @@ import './index.scss'
 
 
 const Contact = () => {
-    const [name, setName] = useState('');
+    // const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [text, setText] = useState('');
@@ -16,7 +16,7 @@ const Contact = () => {
             </div>
             <form className='contact-body' >
                 <div>
-                    <input type="text" placeholder="Name" className='input-span' onChange={(e) => { setName(e.target.value) }}></input>
+                    <input type="text" placeholder="Name" className='input-span' ></input>
                     <input type="text" placeholder="Email ID" className='input-span' onChange={(e) => { setEmail(e.target.value) }}></input>
                 </div>
                 <div>
@@ -26,7 +26,7 @@ const Contact = () => {
                     <textarea placeholder="Text" rows='8' onChange={(e) => { setText(e.target.value) }} />
                 </div>
 
-                <a href={`mailto:subhamsamanta198@gmail.com?email =${email} &subject=${name} : ${subject} &body=${text}` }>
+                <a href={`mailto:subhamsamanta198@gmail.com?email =${email} &subject= ${subject} &body=${text}` }>
                 S E N D</a>
             </form>
         </div>
