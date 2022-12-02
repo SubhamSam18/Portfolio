@@ -15,32 +15,73 @@ const Skills = () => {
         </h1>
       </div>
       <div className='skills-body'>
-        {/* <h1> 
-          Here are some of my skill sets:
-        </h1>
-        <ul>
-          <li>DSA</li>
-          <li>C++</li>
-          <li>Oops</li>
-          <li>MySql</li>
-        </ul> */}
 
         <div className='project-container'>
           <div className='project-heading'>
             <h1>Projects</h1>
           </div>
           <div className='project-cards'>
+
             <div className="card">
               {/* <img src="img_avatar.png" alt="Avatar" style="width:100%"> */}
-                <div>
-                  <h4><b>John Doe</b></h4>
-                  <p>Architect & Engineer</p>
+              <div className='design'>
+                <div className='card-footer'>
+                  <a href='https://github.com/SubhamSam18/MERN'>
+                    <h2>Exercise Tracker<br /><h3>ReactJs, Nodejs, Express, MongoDB</h3></h2>
+                  </a>
                 </div>
+              </div>
+            </div>
+
+            <div className="card">
+              {/* <img src="img_avatar.png" alt="Avatar" style="width:100%"> */}
+              <div className='design'>
+                
+              </div>
+              <div className='card-footer'>
+                  <a href='https://github.com/SubhamSam18/Blog-App-using-ReactJs'>
+                    <h2>Blog Webpage<br /><h3>React Hooks</h3></h2></a>
+                </div>
+            </div>
+            <div className="card">
+              {/* <img src="img_avatar.png" alt="Avatar" style="width:100%"> */}
+              <div className='design'>
+                <div className='card-footer'>
+                  <a href=''>
+                    <h2>Library Management<br /><h3>C#, ADO.net</h3></h2></a>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              {/* <img src="img_avatar.png" alt="Avatar" style="width:100%"> */}
+              <div className='design'>
+                <div className='card-footer'>
+                  <a href='https://github.com/SubhamSam18/Blog-Application'>
+                    <h2>Blog Webpage<br /><h3>Springboot, MySql</h3></h2></a>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              {/* <img src="img_avatar.png" alt="Avatar" style="width:100%"> */}
+              <div className='design'>
+                <div className='card-footer'>
+                  <a href='https://github.com/SubhamSam18/Portfolio'>
+                    <h2>Portfolio<br /><h3>ReactJS, Scss</h3></h2></a>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              {/* <img src="img_avatar.png" alt="Avatar" style="width:100%"> */}
+              <div className='design'>
+                <div className='card-footer'>
+                  <a href='https://github.com/SubhamSam18/TODO-list'>
+                    <h2>To-Do List<br /><h3>ReactJS</h3></h2></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div className='stage-cube'>
-
           <div className='cube-spinner'>
             <div className='face1'>
               <SiCodechef />
