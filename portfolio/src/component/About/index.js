@@ -1,7 +1,9 @@
 import React from 'react'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBootstrap,faCss3, faHackerrank, faHtml5, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap,faCss3, faHtml5, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
+
+import {SiMongodb} from 'react-icons/si';
 
 const About = () => {
   console.log("Hello About!");
@@ -34,7 +36,7 @@ const About = () => {
               <FontAwesomeIcon icon={faBootstrap} color="red" />
             </div>
             <div className='face6'>
-              <FontAwesomeIcon icon={faHackerrank} color="red" />
+              <SiMongodb color="red" />
             </div>
           </div>
         </div>
