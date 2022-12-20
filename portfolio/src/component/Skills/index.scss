@@ -35,6 +35,9 @@
     }
     .stage-cube{
         color: red;
+        img{
+            height: 160px;
+        }
     }
     
     .project-container{
@@ -43,10 +46,12 @@
             margin-top: 20%;
             // background-color: azure;
             .avatar{
+                // object-fit: ;
                 width: 96%;
-                height: 150px;
+                // height: 300px;
                 border-radius: 10px 10px 10px 10px;
                 margin-left: 2%;
+                margin-right: 2%;
                 margin-top: 5%;
                 align-items: center;
                 justify-content: center;
@@ -79,7 +84,7 @@
                 &:after {
                     content: '</h1>';
                     font-family: 'La Belle Aurore';
-                    color: rgb(32, 120, 202);
+                    color: rgb(25, 88, 148);
                     font-size: 18px;
                     opacity: 0.6;
                 }
@@ -91,7 +96,7 @@
             background-color: transparent;
             // opacity: 0.6;
             // box-shadow: 3px 3px black;
-            box-shadow: 0 1px 10px 1px white;
+            box-shadow: 2px 2px 10px white;
             // color: white;
             // display: inline-flex;
             margin: 20px;
@@ -100,7 +105,7 @@
             height: 90%;
             width: 50%;
             border-radius: 10px;
-
+            transition: 0.3s ease-in-out;
             .card-footer{
                 // font-size: 10px;
                 letter-spacing: 2px;
@@ -144,9 +149,8 @@
             background-color: transparent;
             // opacity: 0.6;
             // box-shadow: 3px 3px black;
-            // transition: 0.3s ease-in-out;
-            transform: translateY(0px);
-            box-shadow: 0 2px 8px 3px lightblue;
+            // transform: translateY(0px);
+            box-shadow: 2px 2px 10px rgb(154, 73, 230);
             // color: white;
             // display: inline-flex;
             margin: 20px;
@@ -155,7 +159,8 @@
             height: 100%;
             width: 55%;
             border-radius: 10px;
-            transition: 0.5s;
+            // transition: 0.5s;
+            transform: 2s;
         }
     }
     
@@ -173,19 +178,33 @@
         
             li{
                 
+                img{
+                    height: 40px;
+                    width: 40px;
+                    transition: 0.3s ease-in-out;
+                }
+                img:hover{
+                    height: 50px;
+                    width: 50px;
+                }
                 float: left;
                 // display: inline;
                 width: 60px;
                 a{
+                    
                     color: red;
                     padding: 9px 9px;
                     display: block;
                     font-size: 30px;
                 }
+                svg{
+                    transition: 0.3s ease-in-out;
+                }
             }
             :hover svg{
-                transition: 0.3s ease-in-out;
-                color: white;
+                font-size: 40px;
+                
+                // color: white;
             }
         }
     }
@@ -201,8 +220,8 @@
         font-size: 10px;
         color: white;
         // border: 1px solid white;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         /* font-size: var(--swiper-navigation-size); */
         text-transform: none!important;
@@ -214,7 +233,7 @@
     .swiper-button-prev:hover,.swiper-button-next:hover {
         transition: 0.3s ease-in-out;
         font-family: swiper-icons;
-        font-size: 10px;
+        font-size: 12px;
         color: black;
         background-color: white;
         border: 1px solid black;

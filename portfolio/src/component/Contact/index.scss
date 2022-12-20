@@ -31,13 +31,29 @@
     .contact-body {
         // background: transparent;
         animation: fadeIn 1s 0.2s backwards;
-        .input-span{
-            width: 9%;
+        // .input-span{
+        //     width: 9%;
+        // }
+        width: 60%;
+
+        .name-email{
+            width: 40%;
         }
         input{
+            display: inline-block;
             color: white;
-            width: 20%;
+            width: 40%;
             height: 25px;
+            margin: 10px;
+            border-radius: 0.5rem;
+            background: transparent;
+            // border: transparent;
+            border-color: yellow;
+        }
+        textarea{
+            display: inline-block;
+            color: white;
+            width: 40%;
             margin: 10px;
             border-radius: 0.5rem;
             background: transparent;
@@ -55,7 +71,7 @@
             // border: transparent;
             border-color: yellow;
             border-radius: 0.5rem;
-            width: 20%;
+            // width: 20%;
             margin: 10px;
             background: transparent;
         }
@@ -90,10 +106,12 @@
             font-size: 12px;
             text-align: center;
             font-family: sans-serif;
+            width: 40%;
+            justify-content: center;
             // border-radius: 5px;
             text-decoration: none;
-            margin: 9%;
-            height: 30px;
+            margin: 18%;
+            height: 40px;
             // border-style:outset;
             // border-width: 1px;
             border-color: aliceblue;

@@ -1,8 +1,14 @@
 import React from 'react'
 import './index.scss'
-import { SiCodechef, SiLeetcode, SiCodeforces, SiCplusplus, SiVisualstudiocode } from 'react-icons/si';
+import { SiCodechef, SiLeetcode, SiCodeforces, SiVisualstudiocode } from 'react-icons/si';
 import { FaHackerrank } from 'react-icons/fa';
-import project from '../../assets/images/project.jpg';
+import Exercise from '../../assets/images/Capture.PNG';
+import dotnet from '../../assets/images/dotnet.PNG';
+import port from '../../assets/images/port.PNG';
+import blog from '../../assets/images/react blog.PNG';
+import todo from '../../assets/images/tdo.PNG';
+import interviewbit from '../../assets/images/IB.svg';
+
 // import Carousel from 'react-elastic-carousel';
 // import Slider from 'react-slick';
 // Import Swiper React components
@@ -39,66 +45,55 @@ const Skills = () => {
               <SwiperSlide>
                 <div className="card">
                   <div className='avatar'>
-                  <img src={project} className='avatar' alt="Avatar" />
+                    <img src={Exercise} className='avatar' alt="Avatar" />
                   </div>
 
-                  <footer className='card-footer'/>
-                    <a href='https://github.com/SubhamSam18/MERN'>
-                      <h2>Exercise Tracker<br /></h2><h3>ReactJs, Nodejs, Express, MongoDB</h3>
-                    </a>
-                  </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="card">
-                <div className='avatar'>
-                  <img src={project} className='avatar' alt="Avatar" />
-                  </div>
-                    <footer className='card-footer'/>
-                      <a href='https://github.com/SubhamSam18/Blog-App-using-ReactJs'>
-                        <h2>Blog Webpage<br /></h2><h3>React Hooks</h3></a>
+                  <footer className='card-footer' />
+                  <a href='https://github.com/SubhamSam18/MERN'>
+                    <h2>Exercise Tracker<br /></h2><h3>ReactJs, Nodejs, Express, MongoDB</h3>
+                  </a>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="card">
-                <div className='avatar'>
-                  <img src={project} className='avatar' alt="Avatar" />
+                  <div className='avatar'>
+                    <img src={blog} className='avatar' alt="Avatar" />
+                  </div>
+                  <footer className='card-footer' />
+                  <a href='https://github.com/SubhamSam18/Blog-App-using-ReactJs'>
+                    <h2>Blog Webpage<br /></h2><h3>React Hooks</h3></a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="card">
+                  <div className='avatar'>
+                    <img src={dotnet} className='avatar' alt="Avatar" />
                   </div>
 
-                    <footer className='card-footer'/>
-                      {/* eslint-disable-next-line */}
-                      <a href=''>
-                        <h2>Library Management<br /></h2><h3>C#, ADO.net</h3></a>
-                    </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="card">
-                <div className='avatar'>
-                  <img src={project} className='avatar' alt="Avatar" />
-                  </div>
-                    <footer className='card-footer'/>
-                      <a href='https://github.com/SubhamSam18/Blog-Application'>
-                        <h2>Blog Webpage<br /></h2><h3>Springboot, MySql</h3></a>
+                  <footer className='card-footer' />
+                  <a href='https://github.com/SubhamSam18/Library-Management-System-'>
+                    <h2>Library Management<br /></h2><h3>C#, ADO.net</h3></a>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="card">
-                <div className='avatar'>
-                  <img src={project} className='avatar' alt="Avatar" />
+                  <div className='avatar'>
+                    <img src={port} className='avatar' alt="Avatar" />
                   </div>
-                    <footer className='card-footer'/>
-                      <a href='https://github.com/SubhamSam18/Portfolio'>
-                        <h2>Portfolio<br /></h2><h3>ReactJS, Scss</h3></a>
+                  <footer className='card-footer' />
+                  <a href='https://github.com/SubhamSam18/Portfolio'>
+                    <h2>Portfolio<br /></h2><h3>ReactJS, Scss</h3></a>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="card">
-                <div className='avatar'>
-                  <img src={project} className='avatar' alt="Avatar" />
+                  <div className='avatar'>
+                    <img src={todo} className='avatar' alt="Avatar" />
                   </div>
-                    <footer className='card-footer'/>
-                      <a href='https://github.com/SubhamSam18/TODO-list'>
-                        <h2>To-Do List<br /></h2><h3>ReactJS</h3></a>
-                    </div>
+                  <footer className='card-footer' />
+                  <a href='https://github.com/SubhamSam18/TODO-list'>
+                    <h2>To-Do List<br /></h2><h3>ReactJS</h3></a>
+                </div>
               </SwiperSlide>
             </Swiper>
 
@@ -173,7 +168,7 @@ const Skills = () => {
               <SiCodechef />
             </div>
             <div className='face2'>
-              <SiVisualstudiocode />
+              <img src={interviewbit} alt='interviewbit' />
             </div>
             <div className='face3'>
               <SiLeetcode />
@@ -182,7 +177,7 @@ const Skills = () => {
               <SiCodeforces />
             </div>
             <div className='face5'>
-              <SiCplusplus />
+              <SiVisualstudiocode />
             </div>
             <div className='face6'>
               <FaHackerrank />
@@ -226,6 +221,11 @@ const Skills = () => {
               <li>
                 <a href='https://www.hackerrank.com/197R1A0550'>
                   <FaHackerrank />
+                </a>
+              </li>
+              <li>
+                <a href='https://www.hackerrank.com/197R1A0550'>
+                  <img src={interviewbit} alt='interviewbit' />
                 </a>
               </li>
             </ul>
