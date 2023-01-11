@@ -1,33 +1,43 @@
-.about-heading{
-    margin-left: 8%;
+.container-about-section {
+    position: absolute;
+    margin-left: 13%;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 75%;
+    max-height: 90%;
+}
+
+.about-heading {
+    // margin-left: 13%;
     font-size: 20px;
-    margin-top: 15%;
+    // margin-top: 15%;
     color: yellow;
     animation: fadeIn 1s 0.2s backwards;
-    h1{
-        &:before{
+
+    h1 {
+        &:before {
             content: '<p>';
             font-family: 'La Belle Aurore';
             color: rgb(32, 120, 202);
             font-size: 18px;
             // position: absolute;            margin-top: -40px;
-            left: 15px;
+            // left: 15px;
             opacity: 0.6;
         }
     }
 }
 
-.about-body{
+.about-body {
     width: 50%;
     font-size: large;
-    margin-left: 10%;
+    // margin-left: 10%;
     color: aqua;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 0.8s backwards;
 
-    p{
-        &:after{
+    p {
+        &:after {
             content: '<p/>';
             font-family: 'La Belle Aurore';
             color: rgb(32, 120, 202);
@@ -39,22 +49,41 @@
             opacity: 0.6;
         }
     }
-    
+
 }
-.stage-cube{
-    width: 30%;
-    height: 100%;
-    top: 0;
-    padding-top: 24%;
+
+@media screen and (min-width: 500px) {
+    .stage-cube {
+        width: 30%;
+        height: 30%;
+        top: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .stage-cube {
+        width: 40%;
+        height: 30%;
+        top: 45%;
+    }
+}
+
+.stage-cube {
+    // width: 40%;
+    // height: 30%;
+    // top: 45%;
+    // right: 5px;
+    // padding-top: 24%;
     // display: block;
     position: absolute;
     right: 0;
-    transform-origin: 100px 100px 0;
+    // transform-origin: 100px 100px 100px;
     // width: 80%;
     // height: 20%;
-    margin-left: calc(50% - 100px); 
-    animation: fadeIn 1s 1.7s backwards;  
-    .cube-spinner{
+    margin-left: calc(50% - 100px);
+    animation: fadeIn 1s 1.7s backwards;
+
+    .cube-spinner {
         // perspective: 500px;
         width: 100px;
         animation-name: spincube;
@@ -63,19 +92,34 @@
         animation-duration: 12s;
         transform-style: preserve-3d;
 
-        div{
+
+        @media screen and (min-width: 500px) {
+            .face1,.face2,.face3,.face4,.face5,.face6{
+                width: 14rem;
+                height: 14rem;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .face1,.face2,.face3,.face4,.face5,.face6 {
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+
+        div {
             background-color: rgb(199, 194, 194);
             opacity: 0.7;
             position: absolute;
-            width: 200px;
-            height: 200px;
+            // width: 8rem;
+            // height: 8rem;
             border: 1px solid red;
             text-align: center;
-            font-size: 150px;
-            display:flex;
+            font-size: 5rem;
+            display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 0 20px 0px red; 
+            box-shadow: 0 0 20px 0px red;
         }
 
         // .face1{
@@ -97,45 +141,103 @@
         //     transform: rotateX(-90deg) translateZ(100px);
         // }
 
-        .face1{
-            transform: translateZ(100px) ;
+        @media screen and (min-width: 500px) {
+            .face1 {
+                transform: translateZ(100px);
+            }
+
+            .face2 {
+                transform: translateZ(-100px) rotateX(-180deg) rotate(-90deg);
+            }
+
+            .face3 {
+                transform: translateY(-100px) rotateX(90deg) rotate(-90deg);
+            }
+
+            .face4 {
+                transform: translateY(100px) rotateX(-90deg) rotate(-90deg);
+            }
+
+            .face5 {
+                transform: translateX(100px) rotateY(-90deg);
+            }
+
+            .face6 {
+                transform: translateX(-100px) rotateY(90deg) rotate(-90deg);
+            }
         }
-        .face2{
-            transform:  translateZ(-100px) rotateX(-180deg) rotate(-90deg);
+
+        @media screen and (max-width: 500px) {
+            .face1 {
+                transform: translateZ(70px);
+            }
+
+            .face2 {
+                transform: translateZ(-70px) rotateX(-180deg) rotate(-90deg);
+            }
+
+            .face3 {
+                transform: translateY(-70px) rotateX(90deg) rotate(-90deg);
+            }
+
+            .face4 {
+                transform: translateY(70px) rotateX(-90deg) rotate(-90deg);
+            }
+
+            .face5 {
+                transform: translateX(70px) rotateY(-90deg);
+            }
+
+            .face6 {
+                transform: translateX(-70px) rotateY(90deg) rotate(-90deg);
+            }
         }
-        .face3{
-            transform:  translateY(-100px) rotateX(90deg) rotate(-90deg);
-        }
-        .face4{
-            transform: translateY(100px) rotateX(-90deg) rotate(-90deg);
-        }
-        .face5{
-            transform: translateX(100px) rotateY(-90deg);
-        }
-        .face6{
-            transform: translateX(-100px) rotateY(90deg) rotate(-90deg);
-        }
+
+        // .face1{
+        //     transform: translateZ(70px) ;
+        // }
+        // .face2{
+        //     transform:  translateZ(-70px) rotateX(-180deg) rotate(-90deg);
+        // }
+        // .face3{
+        //     transform:  translateY(-70px) rotateX(90deg) rotate(-90deg);
+        // }
+        // .face4{
+        //     transform: translateY(70px) rotateX(-90deg) rotate(-90deg);
+        // }
+        // .face5{
+        //     transform: translateX(70px) rotateY(-90deg);
+        // }
+        // .face6{
+        //     transform: translateX(-70px) rotateY(90deg) rotate(-90deg);
+        // }
 
     }
 
-    @keyframes spincube{
+    @keyframes spincube {
+
         from,
-        to{
+        to {
             transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
         }
-        16%{
+
+        16% {
             transform: rotateX(-90deg);
         }
-        33%{
+
+        33% {
             transform: rotateZ(-90deg) rotateY(90deg);
         }
-        50%{
+
+        50% {
             transform: rotateY(-90deg) rotateZ(90deg);
         }
-        66%{
+
+        66% {
             transform: rotateY(-270deg) rotateZ(90deg);
         }
-        83%{
+
+        83% {
             transform: rotateY(-90deg) rotateZ(90deg);
         }
     }
@@ -176,6 +278,5 @@
     //     background-color: white;
     //     opacity: 0.2;
     // }
-    
-}
 
+}

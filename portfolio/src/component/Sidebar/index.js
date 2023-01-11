@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.scss'
-import LogoS from '../../assets/images/portfolio-removebg-preview.png'
+// import LogoS from '../../assets/images/portfolio-removebg-preview.png'
+import LogoS from '../../assets/images/Slogo.png'
 import { Link, NavLink } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCode, faEnvelope , faHome , faUser} from '@fortawesome/free-solid-svg-icons'

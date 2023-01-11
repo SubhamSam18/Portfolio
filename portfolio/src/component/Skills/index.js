@@ -24,13 +24,7 @@ const Skills = () => {
   return (
     <div className='skills-container'>
 
-      <div className='skills-heading'>
-        <h1>
-          <br />
-          Coding Platforms
-          <br />
-        </h1>
-      </div>
+
       <div className='skills-body'>
 
         <div className='project-container'>
@@ -39,8 +33,6 @@ const Skills = () => {
           </div>
 
           <div className='project-cards'>
-
-
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
               <SwiperSlide>
                 <div className="card">
@@ -96,7 +88,43 @@ const Skills = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
-
+            <div className='skills-heading'>
+              <h1>
+                <br />
+                Coding Platforms
+                <br />
+              </h1>
+            </div>
+            <div className='platform-logos'>
+            <ul>
+              <li>
+                <a href='https://codechef.com/users/subham189'>
+                  <SiCodechef />
+                </a>
+              </li>
+              <li>
+                <a href='https://leetcode.com/197R1A0550/'>
+                  <SiLeetcode />
+                </a>
+              </li>
+              <li>
+                <a href='https://codeforces.com/profile/subham_550'>
+                  <SiCodeforces />
+                </a>
+              </li>
+              <li>
+                <a href='https://www.hackerrank.com/197R1A0550'>
+                  <FaHackerrank />
+                </a>
+              </li>
+              <li>
+                <a href='https://www.hackerrank.com/197R1A0550'>
+                  <img src={interviewbit} alt='interviewbit' />
+                </a>
+              </li>
+            </ul>
+          </div>
+            
 
 
 
@@ -162,7 +190,9 @@ const Skills = () => {
 
           </div>
         </div>
-        <div className='stage-cube'>
+
+
+        <div className='stage-cube1'>
           <div className='cube-spinner'>
             <div className='face1'>
               <SiCodechef />
@@ -201,35 +231,7 @@ const Skills = () => {
               </div>
             </div>
           </div> */}
-          <div className='platform-logos'>
-            <ul>
-              <li>
-                <a href='https://codechef.com/users/subham189'>
-                  <SiCodechef />
-                </a>
-              </li>
-              <li>
-                <a href='https://leetcode.com/197R1A0550/'>
-                  <SiLeetcode />
-                </a>
-              </li>
-              <li>
-                <a href='https://codeforces.com/profile/subham_550'>
-                  <SiCodeforces />
-                </a>
-              </li>
-              <li>
-                <a href='https://www.hackerrank.com/197R1A0550'>
-                  <FaHackerrank />
-                </a>
-              </li>
-              <li>
-                <a href='https://www.hackerrank.com/197R1A0550'>
-                  <img src={interviewbit} alt='interviewbit' />
-                </a>
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -237,3 +239,5 @@ const Skills = () => {
 }
 
 export default Skills;
+
+// 15317

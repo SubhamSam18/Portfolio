@@ -1,7 +1,12 @@
 .contact-container {
-    margin-left: 10%;
-    margin-top: 10%;
-    height: 1000px;
+
+    position: absolute;
+    margin-left: 13%;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 75%;
+    max-height: 90%;
+
     animation: fadeIn 1s 0.2s backwards;
     h1{
         &:before{
@@ -28,21 +33,59 @@
         font-size: 30px;
     }
 
+    @media screen and (min-width: 500px) {
+        .contact-body {
+            width: 60%;
+            // height: 70%;
+            // top: 80%;
+            // .name-email{
+            //     width: 40%;
+            // }
+            input{
+                display: inline-block;
+                color: white;
+                width: 10%;
+                height: 25px;
+                margin: 10px;
+                border-radius: 0.5rem;
+                background: transparent;
+                // border: transparent;
+                border-color: yellow;
+            }
+            textarea{
+                display: inline-block;
+                color: white;
+                width: 40%;
+                margin: 10px;
+                border-radius: 0.5rem;
+                background: transparent;
+                // border: transparent;
+                border-color: yellow;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .contact-body {
+            width: 100%;
+            // height: 30%;
+            // top: 45%;
+        }
+    }
+    
     .contact-body {
         // background: transparent;
         animation: fadeIn 1s 0.2s backwards;
         // .input-span{
         //     width: 9%;
         // }
-        width: 60%;
+        // width: 60%;
 
-        .name-email{
-            width: 40%;
-        }
+        
         input{
             display: inline-block;
             color: white;
-            width: 40%;
+            width: 100%;
             height: 25px;
             margin: 10px;
             border-radius: 0.5rem;
@@ -53,13 +96,14 @@
         textarea{
             display: inline-block;
             color: white;
-            width: 40%;
+            width: 100%;
             margin: 10px;
             border-radius: 0.5rem;
             background: transparent;
             // border: transparent;
             border-color: yellow;
         }
+
         input,textarea:focus{
             border-color: yellow;
             color: white;
@@ -103,15 +147,15 @@
             background-color: transparent;
             border-color: yellow;
             letter-spacing: 2px;
-            font-size: 12px;
+            font-size: 14px;
             text-align: center;
             font-family: sans-serif;
-            width: 40%;
+            // width: 50%;
             justify-content: center;
             // border-radius: 5px;
             text-decoration: none;
-            margin: 18%;
-            height: 40px;
+            margin-left: 45%;
+            // height: 40px;
             // border-style:outset;
             // border-width: 1px;
             border-color: aliceblue;
